@@ -448,3 +448,23 @@ font-weight:700;
 font-size:18px;
 margin-top:10px;
 }
+.contact-info{
+background:#ffffff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-info h2{
+margin-bottom:20px;
+}
+
+.contact-info p{
+margin-bottom:15px;
+font-size:17px;
+}
+
+.contact-info i{
+color:#D4AF37;
+margin-right:10px;
+}
