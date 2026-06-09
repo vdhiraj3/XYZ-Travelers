@@ -408,8 +408,6 @@ margin-top:40px;
 font-size:32px;
 }
 
-}
-
 @media(max-width:576px){
 
 .hero-content h1{
@@ -434,4 +432,19 @@ height:55px;
 font-size:28px;
 }
 
+}.hero-small{
+background:#0F172A;
+padding:120px 0;
+color:#fff;
+text-align:center;
+}
+
+.hero-small h1{
+font-size:55px;
+font-weight:700;
+}
+
+.hero-small p{
+font-size:18px;
+margin-top:10px;
 }
