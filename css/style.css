@@ -457,3 +457,28 @@ color:#D4AF37;
 padding-left:5px;
 }
 box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+.review-card{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:.3s;
+height:100%;
+}
+
+.review-card:hover{
+transform:translateY(-10px);
+}
+
+.review-card p{
+font-style:italic;
+line-height:1.8;
+color:#555;
+}
+
+.review-card h6{
+margin-top:15px;
+font-weight:700;
+color:#0F172A;
+}
