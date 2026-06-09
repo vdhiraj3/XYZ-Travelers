@@ -1,0 +1,440 @@
+/* =========================
+XYZ TRAVELERS STYLE.CSS
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#ffffff;
+color:#222;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+.custom-nav{
+background:rgba(10,15,35,0.95);
+backdrop-filter:blur(10px);
+padding:15px 0;
+transition:0.3s;
+}
+
+.navbar-brand{
+font-size:28px;
+font-weight:700;
+color:#D4AF37 !important;
+}
+
+.nav-link{
+color:#fff !important;
+margin-left:15px;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-link:hover{
+color:#D4AF37 !important;
+}
+
+/* HERO */
+
+.hero-section{
+position:relative;
+height:100vh;
+background:url('../images/hero.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+color:#fff;
+}
+
+.hero-content h1{
+font-size:65px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+/* HERO SMALL */
+
+.hero-small{
+background:#0F172A;
+padding:120px 0;
+color:#fff;
+text-align:center;
+}
+
+.hero-small h1{
+font-size:55px;
+font-weight:700;
+}
+
+.hero-small p{
+font-size:18px;
+margin-top:10px;
+}
+
+/* BUTTONS */
+
+.btn-gold{
+background:#D4AF37;
+color:#000;
+padding:14px 28px;
+border-radius:8px;
+font-weight:600;
+border:none;
+transition:0.3s;
+}
+
+.btn-gold:hover{
+transform:translateY(-3px);
+background:#f0c84f;
+}
+
+.btn-warning{
+background:#D4AF37 !important;
+border:none !important;
+font-weight:600;
+}
+
+.btn-warning:hover{
+background:#e7be47 !important;
+}
+
+/* INQUIRY FORM */
+
+.inquiry-box{
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(20px);
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 35px rgba(0,0,0,0.3);
+}
+
+.inquiry-box h3{
+color:#fff;
+margin-bottom:20px;
+font-weight:700;
+}
+
+.inquiry-box .form-control{
+height:50px;
+border:none;
+border-radius:8px;
+}
+
+/* SECTION */
+
+.section-space{
+padding:90px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:42px;
+font-weight:700;
+color:#0F172A;
+}
+
+.section-title h2::after{
+content:'';
+width:80px;
+height:4px;
+background:#D4AF37;
+display:block;
+margin:15px auto;
+border-radius:20px;
+}
+
+/* DESTINATION CARD */
+
+.destination-card{
+overflow:hidden;
+border-radius:15px;
+position:relative;
+cursor:pointer;
+margin-bottom:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+background:#fff;
+}
+
+.destination-card img{
+width:100%;
+height:280px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.destination-card:hover img{
+transform:scale(1.1);
+}
+
+.destination-card h4{
+font-weight:700;
+}
+
+/* TRIP CARD */
+
+.trip-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.4s;
+margin-bottom:30px;
+}
+
+.trip-card:hover{
+transform:translateY(-10px);
+}
+
+.trip-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.trip-content{
+padding:25px;
+}
+
+.trip-content h4{
+font-size:24px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.trip-content p{
+color:#666;
+}
+
+.trip-content h5{
+color:#D4AF37;
+font-size:28px;
+font-weight:700;
+margin-bottom:15px;
+}
+
+/* BLOG CARD */
+
+.blog-card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.blog-card:hover{
+transform:translateY(-8px);
+}
+
+.blog-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.blog-card-content{
+padding:20px;
+}
+
+/* REVIEW CARD */
+
+.review-card{
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+margin-bottom:20px;
+}
+
+/* CONTACT PAGE */
+
+.contact-info{
+background:#fff;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-info h2{
+margin-bottom:20px;
+}
+
+.contact-info p{
+margin-bottom:15px;
+font-size:17px;
+}
+
+.contact-info i{
+color:#D4AF37;
+margin-right:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#0F172A;
+padding:60px 0;
+color:#fff;
+}
+
+footer h3{
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+footer p{
+margin-bottom:8px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+color:#fff;
+text-decoration:none;
+z-index:999;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.1);}
+100%{transform:scale(1);}
+}
+
+/* MOBILE STICKY BAR */
+
+.mobile-bar{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#0F172A;
+display:flex;
+justify-content:space-around;
+padding:12px;
+z-index:9999;
+}
+
+.mobile-bar a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-track{
+background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+background:#D4AF37;
+border-radius:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+
+.hero-content h1{
+font-size:42px;
+}
+
+.hero-section{
+height:auto;
+padding:120px 0 80px;
+}
+
+.inquiry-box{
+margin-top:40px;
+}
+
+.section-title h2{
+font-size:32px;
+}
+
+.hero-small h1{
+font-size:40px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-content h1{
+font-size:34px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.destination-card img{
+height:220px;
+}
+
+.trip-card img{
+height:220px;
+}
+
+.whatsapp-btn{
+width:55px;
+height:55px;
+font-size:28px;
+}
+
+.hero-small h1{
+font-size:32px;
+}
+
+}
