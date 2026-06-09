@@ -5,14 +5,15 @@ window.addEventListener("scroll", function(){
 const nav = document.querySelector(".custom-nav");
 
 if(window.scrollY > 100){
-nav.style.background = "#0F172A";
+nav.style.background = "#ffffff";
+nav.style.boxShadow = "0 4px 20px rgba(0,0,0,.08)";
 }
 else{
-nav.style.background = "rgba(10,15,35,0.95)";
+nav.style.background = "#ffffff";
+nav.style.boxShadow = "0 4px 20px rgba(0,0,0,.08)";
 }
 
 });
-
 // Smooth Animation
 
 AOS.init({
