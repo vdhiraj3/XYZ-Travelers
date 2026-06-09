@@ -1,14 +1,17 @@
 /* =========================
 XYZ TRAVELERS STYLE.CSS
 ========================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root{
 --primary:#0F172A;
---gold:#D4AF37;
---bg:#F8FAFC;
+--secondary:#1E293B;
+--accent:#F59E0B;
+--accent-hover:#D97706;
 --white:#FFFFFF;
---text:#334155;
+--bg:#F8FAFC;
+--text:#475569;
 --border:#E2E8F0;
 }
 
@@ -33,40 +36,34 @@ overflow-x:hidden;
 
 .custom-nav{
 background:#ffffff;
-padding:15px 0;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+padding:18px 0;
+box-shadow:0 4px 20px rgba(0,0,0,.08);
 transition:.3s;
 }
 
 .navbar-brand{
-font-size:28px;
-font-weight:700;
-color:var(--gold)!important;
+font-size:30px;
+font-weight:800;
+color:var(--accent)!important;
 }
 
 .nav-link{
 color:var(--primary)!important;
-margin-left:15px;
-font-weight:500;
+margin-left:18px;
+font-weight:600;
 transition:.3s;
 }
 
 .nav-link:hover{
-color:var(--gold)!important;
+color:var(--accent)!important;
 }
 
 /* HERO */
 
 .hero-section{
 position:relative;
-min-height:100vh;
-background:
-linear-gradient(
-rgba(255,255,255,.65),
-rgba(255,255,255,.65)
-),
-url('../images/hero.jpg');
-
+height:100vh;
+background:url('../images/hero.jpg');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -74,17 +71,20 @@ align-items:center;
 }
 
 .overlay{
-display:none;
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(15,23,42,.65);
 }
 
 .hero-content{
 position:relative;
 z-index:2;
-color:var(--primary);
+color:#fff;
 }
 
 .hero-content h1{
-font-size:65px;
+font-size:68px;
 font-weight:800;
 line-height:1.1;
 margin-bottom:20px;
@@ -93,63 +93,68 @@ margin-bottom:20px;
 .hero-content p{
 font-size:20px;
 margin-bottom:25px;
+color:#fff;
 }
 
 /* HERO SMALL */
 
 .hero-small{
-background:#ffffff;
+background:#0F172A;
 padding:120px 0;
 text-align:center;
-border-bottom:1px solid var(--border);
+color:white;
 }
 
 .hero-small h1{
 font-size:55px;
 font-weight:700;
-color:var(--primary);
+color:white;
 }
 
 .hero-small p{
 font-size:18px;
-color:#64748B;
+color:#CBD5E1;
 }
 
 /* BUTTONS */
 
 .btn-gold,
 .btn-warning{
-background:var(--gold)!important;
+background:var(--accent)!important;
 border:none!important;
 color:#fff!important;
-font-weight:600;
-padding:12px 24px;
+padding:12px 26px;
 border-radius:12px;
+font-weight:600;
 transition:.3s;
 }
 
 .btn-gold:hover,
 .btn-warning:hover{
+background:var(--accent-hover)!important;
 transform:translateY(-2px);
 }
 
-/* INQUIRY */
+/* INQUIRY BOX */
 
 .inquiry-box{
-background:#fff;
-border:1px solid var(--border);
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.15);
 padding:35px;
 border-radius:24px;
-box-shadow:0 20px 50px rgba(0,0,0,.08);
+box-shadow:0 20px 50px rgba(0,0,0,.25);
 }
 
 .inquiry-box h3{
-color:var(--primary);
+color:white;
 margin-bottom:20px;
+font-weight:700;
 }
 
 .inquiry-box .form-control{
 height:50px;
+border:none;
 border-radius:10px;
 }
 
@@ -165,16 +170,16 @@ margin-bottom:60px;
 }
 
 .section-title h2{
-font-size:42px;
+font-size:46px;
 font-weight:800;
 color:var(--primary);
 }
 
 .section-title h2::after{
 content:'';
-width:80px;
+width:90px;
 height:4px;
-background:var(--gold);
+background:var(--accent);
 display:block;
 margin:15px auto;
 border-radius:30px;
@@ -189,10 +194,10 @@ border-radius:30px;
 .review-card{
 background:#fff;
 border-radius:20px;
-border:1px solid #eee;
-box-shadow:0 10px 40px rgba(0,0,0,.06);
-transition:.3s;
+border:1px solid #EDF2F7;
+box-shadow:0 12px 35px rgba(0,0,0,.08);
 overflow:hidden;
+transition:.3s;
 }
 
 .destination-card:hover,
@@ -200,6 +205,7 @@ overflow:hidden;
 .blog-card:hover,
 .review-card:hover{
 transform:translateY(-10px);
+box-shadow:0 20px 50px rgba(0,0,0,.12);
 }
 
 .destination-card img,
@@ -226,11 +232,24 @@ height:220px;
 padding:25px;
 }
 
+.trip-content h4{
+font-size:24px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.trip-content p{
+color:#64748B;
+}
+
 .trip-content h5{
-color:var(--gold);
+color:var(--accent);
 font-size:28px;
 font-weight:700;
+margin-bottom:15px;
 }
+
+/* REVIEW CARD */
 
 .review-card{
 padding:30px;
@@ -239,6 +258,13 @@ padding:30px;
 .review-card p{
 font-style:italic;
 line-height:1.8;
+color:#555;
+}
+
+.review-card h6{
+margin-top:15px;
+font-weight:700;
+color:var(--primary);
 }
 
 /* CONTACT */
@@ -248,21 +274,26 @@ padding:30px;
 }
 
 .contact-info i{
-color:var(--gold);
+color:var(--accent);
 margin-right:10px;
 }
 
 /* FOOTER */
 
 footer{
-background:#fff;
-border-top:1px solid var(--border);
-padding:60px 0;
+background:#0F172A;
+padding:70px 0;
+color:white;
 }
 
 footer h3,
 footer h5{
-color:var(--primary);
+color:var(--accent);
+margin-bottom:15px;
+}
+
+footer p{
+margin-bottom:8px;
 }
 
 .footer-links{
@@ -276,16 +307,16 @@ margin-bottom:10px;
 
 .footer-links a{
 text-decoration:none;
-color:#334155;
+color:white;
 transition:.3s;
 }
 
 .footer-links a:hover{
-color:var(--gold);
+color:var(--accent);
 padding-left:5px;
 }
 
-/* WHATSAPP */
+/* WHATSAPP BUTTON */
 
 .whatsapp-btn{
 position:fixed;
@@ -299,10 +330,23 @@ display:flex;
 align-items:center;
 justify-content:center;
 font-size:32px;
-color:#fff;
+color:white;
 text-decoration:none;
 z-index:999;
-box-shadow:0 8px 20px rgba(0,0,0,.25);
+box-shadow:0 8px 25px rgba(0,0,0,.3);
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.1);
+}
+100%{
+transform:scale(1);
+}
 }
 
 /* MOBILE BAR */
@@ -318,16 +362,17 @@ position:fixed;
 bottom:0;
 left:0;
 width:100%;
-background:var(--primary);
+background:#0F172A;
 display:flex;
 justify-content:space-around;
 align-items:center;
 padding:12px;
 z-index:9999;
+box-shadow:0 -5px 15px rgba(0,0,0,.15);
 }
 
 .mobile-bar a{
-color:#fff;
+color:white;
 text-decoration:none;
 font-size:14px;
 font-weight:600;
@@ -336,6 +381,7 @@ font-weight:600;
 body{
 padding-bottom:70px;
 }
+
 }
 
 /* SCROLLBAR */
@@ -344,8 +390,12 @@ padding-bottom:70px;
 width:8px;
 }
 
+::-webkit-scrollbar-track{
+background:#f1f1f1;
+}
+
 ::-webkit-scrollbar-thumb{
-background:var(--gold);
+background:var(--accent);
 border-radius:30px;
 }
 
@@ -358,8 +408,8 @@ font-size:42px;
 }
 
 .hero-section{
+height:auto;
 padding:120px 0 80px;
-min-height:auto;
 }
 
 .inquiry-box{
